@@ -1,0 +1,27 @@
+.reveal .slides section {
+    height: 80%;
+    padding: 0;
+}
+
+.reveal .slide-number {
+  right: 15px;
+  bottom: 15px;
+  font-size: 20px;
+  color: #000;
+  background-color: #FFF;
+}
+
+.reveal .slides section .header {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.5%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reveal .slides section .content {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 82.5%;
+    padding: 2.5%;
+}
