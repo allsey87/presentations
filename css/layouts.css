@@ -72,20 +72,6 @@
     grid-row:1;
 }
 
-.reveal .slides section .comparison {
-    grid-template-columns: 50% auto;
-    grid-template-rows: auto;
-}
-
-.reveal .slides section .comparison #left {
-    grid-column:1;
-    grid-row:1;
-}
-
-.reveal .slides section .comparison #right {
-    grid-column:2;
-    grid-row:1;
-}
 
 
 

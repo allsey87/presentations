@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <title>Presentation Title</title>
-
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css">
     <link rel="stylesheet" href="css/layouts.css">
@@ -22,6 +20,7 @@
     <div class="reveal">
       <div class="slides">
 	<section>
+          <!-- title slide layout -->
           <div id="title">
             <div id="heading">            
               <h1>This is a long academic presentation title made from one too many characters</h1>
@@ -35,33 +34,43 @@
             </div>            
           </div>
         </section>
+        <!-- whole slide layout -->        
 	<section>
-          <div class="header">Slide title</div>
+          <div class="header">Whole slide layout title</div>
           <div class="content">
             <div>
-              Slide contents!
+              Whole slide contents!
             </div>
           </div>
         </section>
-        
+        <!-- left-right slide layout -->        
         <section>
-          <div class="header">Comparison slide title</div>
-          <div class="content comparison">
-            <div id="left">
+          <div class="header">Left-right slide layout title</div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
               Left side contents!
             </div>
-            <div id="right">
+            <div style="grid-column:2;">
               Right side contents!
             </div>
           </div>
         </section>
-
+        <!-- top-bottom slide layout -->
+        <section>
+          <div class="header">Top-bottom slide layout title</div>
+          <div class="content" style="grid-template-rows:50% auto;">
+            <div style="grid-row:1;">
+              Top contents!
+            </div>
+            <div style="grid-row:2;">
+              Bottom contents!
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
-
     <script>
       Reveal.initialize({
         width: 1600,
