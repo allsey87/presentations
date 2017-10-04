@@ -1,5 +1,6 @@
+/* tweak some of the internal styles */
 .reveal .slides section {
-    height: 80%;
+    height: 90%;
     padding: 0;
 }
 
@@ -11,17 +12,80 @@
   background-color: #FFF;
 }
 
+.reveal section img.plain {
+    border: 0;
+    box-shadow: none;
+    background: rgba(0,0,0,0);
+}
+
+/* title slide layout */
+.reveal .slides section #title {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 95%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 60% auto;
+    padding: 1.25%;
+}
+
+.reveal .slides section #title #heading {
+    grid-column:1/span 2;
+    grid-row:1;
+    align-self:center;
+}
+
+.reveal .slides section #title #affiliation {
+    grid-column:2;
+    grid-row:2;
+}
+
+.reveal .slides section #title #author {
+    grid-column:1;
+    grid-row:2;
+    align-self:end;
+    text-align:right;
+}
+
+/* general slide layouts */
 .reveal .slides section .header {
-    background-color: rgba(0, 0, 0, 0.2);
-    margin-bottom: 2.5%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25%;
     height: 12.5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .reveal .slides section .content {
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 82.5%;
-    padding: 2.5%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80%;
+    padding: 1.25%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
+
+.reveal .slides section .content div {
+    grid-column:1;
+    grid-row:1;
+}
+
+.reveal .slides section .comparison {
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+}
+
+.reveal .slides section .comparison #left {
+    grid-column:1;
+    grid-row:1;
+}
+
+.reveal .slides section .comparison #right {
+    grid-column:2;
+    grid-row:1;
+}
+
+
+
