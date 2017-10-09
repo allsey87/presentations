@@ -20,20 +20,102 @@
     <div class="reveal">
       <div class="slides">
 	<section>
-          <!-- title slide layout -->
+          <!-- 00 title slide -->
           <div id="title">
             <div id="heading">            
-              <h1>This is a long academic presentation title made from one too many characters</h1>
+              <h1>Swarm Robotics for Autonomous Multi-Robot Construction</h1>
             </div>
             <div id="author">
               <h3>Michael Allwright</h3>
-              <p>Post-doctoral researcher for swarm robotics</p>
+              <p>Post-doctoral researcher in swarm robotics</p>
             </div>
             <div id="affiliation">
               <img class="plain" height="86%" src="affiliation.png"/>
             </div>            
           </div>
         </section>
+        <!-- 01 what is swarm robotics? -->
+        <section>
+          <div class="header">What is swarm robotics?</div>
+          <div class="content" style="grid-template-columns:47.5% auto;">
+            <div style="grid-column:1;">
+              <ul>
+                <li>A completely decentralised technique for coordinating multi-robot systems</li>
+                <li>Swarm robotic systems self-organise using direct and indirect communication</li>
+                <ul>
+                  <li>Direct: between two robots in the vicinity of each other</li>
+                  <li>Indirect: through modifications of a shared environment</li>
+                </ul>
+              </ul>
+            </div>
+            <div style="grid-column:2;">
+              <img style="width:100%" src="images/footbots.jpg"/>
+            </div>
+          </div>
+        </section>
+        <!-- 02 what is the inspiration for swarm robotics? -->
+        <section>
+          <div class="header">What is the inspiration for swarm robotics?</div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
+              <ul>
+                <li>Research into the collective behaviour of social insect colonies shows that these systems are:</li>
+                <ul>
+                  <li>Robust</li>
+                  <li>Scalable</li>
+                  <li>Adaptive</li>
+                </ul>
+                <li>At IRIDIA, we study the intelligence of these natural systems and apply it to multi-robot systems</li>
+              </ul>
+            </div>
+            <div style="grid-column:2;">
+              <img style="width:100%" src="images/leafcutterants.png"/>
+            </div>
+          </div>
+        </section>
+        <!-- 03 recent work at IRIDIA -->
+        <section>
+          <div class="header">Recent work at IRIDIA</div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
+              <img style="height:65%" src="images/eyebots.jpg"/>
+              <ul>
+                <li>Eye-bots attach magnetically to a ceiling to form a surveillance network</li>
+              </ul>
+            </div>
+            <div style="grid-column:2;">
+              <video style="height:65%" data-autoplay>
+		<source data-src="videos/swarmanoid.mp4" type="video/mp4"/>
+	      </video>
+              <ul>
+                <li>Two foot-bots and a hand-bot navigate an indoor environment</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 swarm construction -->
+        <section>
+          <div class="header">Autonomous construction by a swarm</div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
+              <ul>
+                <li>Agents explore the environment, observing the partially-built structures</li>
+                <li>Agents detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
+                <li>These construction actions modify the partially-built structures in the environment</li>
+              </ul>
+            </div>
+            <div style="grid-column:2">
+              <img class="plain" style="width:50%" src="images/structures.png"/>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        
         <!-- whole slide layout -->        
 	<section>
           <div class="header">Whole slide layout title</div>
