@@ -34,6 +34,7 @@
             </div>            
           </div>
         </section>
+        
         <!-- 01 what is swarm robotics? -->
         <section>
           <div class="header">What is swarm robotics?</div>
@@ -53,6 +54,7 @@
             </div>
           </div>
         </section>
+        
         <!-- 02 what is the inspiration for swarm robotics? -->
         <section>
           <div class="header">What is the inspiration for swarm robotics?</div>
@@ -73,6 +75,7 @@
             </div>
           </div>
         </section>
+        
         <!-- 03 recent work at IRIDIA -->
         <section>
           <div class="header">Recent work at IRIDIA</div>
@@ -94,27 +97,123 @@
           </div>
         </section>
 
-        <!-- 04 swarm construction -->
+        <!-- 04 overview of my work -->        
         <section>
-          <div class="header">Autonomous construction by a swarm</div>
-          <div class="content" style="grid-template-columns:50% auto;">
+          <div class="header">Recent work at IRIDIA</div>
+          <div class="content" style="grid-template-columns:40% auto auto;">
             <div style="grid-column:1;">
               <ul>
-                <li>Agents explore the environment, observing the partially-built structures</li>
-                <li>Agents detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
-                <li>These construction actions modify the partially-built structures in the environment</li>
+                <li>I have developed a swarm robotics construction system using hardware and simulation</li>
+                <li>The system consists of autonomous robots and stigmergic blocks</li>
+                <li>This system enables a comprehensive workflow for the design and the validation of the control software</li>
               </ul>
             </div>
+            <div style="grid-column:2;">
+              <img style="width:100%;" src="images/hardware.png"/>
+              <small>Hardware implementation</small>
+            </div>
+            <div style="grid-column:3;">
+              <img style="width:100%;" src="images/simulation.png"/>
+              <small>Implementation using simulation</small>
+            </div>           
+          </div>
+        </section>
+        
+        <!-- 05 the 'swarm' approach to multi-agent construction -->
+        <section>
+          <div class="header">Autonomous construction by a swarm of robots</div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
+              <ol>
+                <li>Robots explore an environment, observing partially-built structures</li>
+                <li>Robots detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
+                <li>These construction actions modify the partially-built structures in the environment, resulting in a feedback loop, which advances the construction</li>
+              </ol>
+            </div>
             <div style="grid-column:2">
-              <img class="plain" style="width:50%" src="images/structures.png"/>
+              <img class="plain" style="width:75%" src="images/structures.png"/>
+              <small>Work in simulation by Theraulaz and Bonabeau demonstrated how this technique may be used to generated sophisticated structures</small>
             </div>
           </div>
         </section>
 
+        <!-- 06 the hardware implementation -->
+        <section>
+	  <div class="header">The hardware implementation</div>
+	  <div class="content" style="grid-template-columns:42.5% auto;">
+            <div style="grid-column:1;">
+              <img style="width:100%" src="images/hardwareb.png"/>
+              <small>Two robots construct a wall by attaching stigmergic blocks</small>
+	    </div>
+            <div style="grid-column:2;">
+	      <ul>
+		<li>Consists of autonomous robots and stigmergic blocks, which the robots assemble into structures</li>
+                <li>Purpose of the hardware:</li>
+                <ol>
+                  <li>To understand how the hardware influences the construction and the use of stigmergy</li>
+                  <li>To provide the implementation in simulation with a basis in reality</li>
+                  <li>To validate results from simulation</li>
+                </ol>                  
+              </ul>
+            </div>
+	  </div>
+	</section>
+        
+        <!-- 07 the stigmergic block -->
+	<section>
+	  <div class="header">The stigmergic block</div>
+	  <div class="content" style="grid-template-columns:57.5% auto;">
+            <div style="grid-column:1;">
+	      <img class="plain" style="height:75%" src="images/block-internal-annotated.png"/>
+              <small>Internal components of a stigmergic block</small>
+	    </div>
+            <div style="grid-column:2;">
+	      <img style="height:75%" src="images/blocks.png"/>
+              <small>A smart structure made from stigmergic blocks</small>
+	    </div>
+	  </div>
+	</section>
 
+        <!-- 08 the autonomous robot -->
+	<section>
+	  <div class="header">The autonomous robot</div>
+	  <div class="content" style="grid-template-columns:22.5% 22.5% auto;">
+            <div style="grid-column:2;">
+	      <img style="height:100%" src="images/robot.png"/>
+	    </div>
+            <div style="grid-column:1;">
+	      <img style="height:100%" src="images/robotb.png"/>
+	    </div>
+            <div style="grid-column:3;">
+	      <img class="plain" style="height:85%" src="images/end-effector-annotated.png"/>
+              <small>Components of the autonomous robot's end effector</small>
+	    </div>
+	  </div>
+	</section>
 
+        <!-- 09 the implementation in simulation -->
+        <section>
+	  <div class="header">The implementation in simulation</div>
+	  <div class="content" style="grid-template-columns:50% auto;">
+            <div style="grid-column:1;">
+	      <ul>
+		<li>I have also developed plugins for the ARGoS simulator to enable an accurate simulation of the hardware</li>
+                <li>Purpose of the simulation:</li>
+                <ol>
+                  <li>To validate the control software during its development</li>
+                  <li>To enable scaling up to and collecting data from large experiments</li>
+	        </ol>                  
+	      </ul>
+              <img class="plain" style="height:15%;margin:0pt 15pt" src="images/bullet.png"/>
+              <img class="plain" style="height:15%;margin:0pt 15pt" src="images/opengl.png"/>
+	    </div>
+            <div style="grid-column:2;">
+              <img style="height:100%" src="images/simulationb.png"/>
+	    </div>
+	  </div>
+	</section>
 
-
+        
         
         <!-- whole slide layout -->        
 	<section>
