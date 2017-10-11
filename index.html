@@ -105,7 +105,7 @@
               <ul>
                 <li>I have developed a swarm robotics construction system using hardware and simulation</li>
                 <li>The system consists of autonomous robots and stigmergic blocks</li>
-                <li>This system enables a comprehensive workflow for the design and the validation of the control software</li>
+                <li>The system utilises hardware and simulation to enable a comprehensive workflow for the design and the validation of control software</li>
               </ul>
             </div>
             <div style="grid-column:2;">
@@ -123,7 +123,7 @@
         <section>
           <div class="header">Autonomous construction by a swarm of robots</div>
           <div class="content" style="grid-template-columns:50% auto;">
-            <div style="grid-column:1;">
+            <div >
               <ol>
                 <li>Robots explore an environment, observing partially-built structures</li>
                 <li>Robots detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
@@ -213,9 +213,100 @@
 	  </div>
 	</section>
 
+        <!-- 10 latest results from the hardware -->
+	<section>
+          <div class="header">Latest results from the hardware</div>
+          <div class="content">
+            <div>
+              <video data-autoplay id="construction-00">
+	        <source data-src="videos/construction-00.mp4" type="video/mp4"/>
+	      </video>
+              <script>
+                document.getElementById('construction-00').addEventListener('ended', function(){
+                   Reveal.next();
+                }, false);
+              </script>
+            </div>
+          </div>
+        </section>
         
+        <!-- 11 latest results from the hardware -->
+        <section>
+          <div class="header">Latest results from the hardware</div>
+          <div class="content" style="grid-template-columns:auto auto auto;grid-template-rows:auto auto">
+            <div style="grid-column:1;grid-row:1;">
+              <video data-autoplay style="height:85%" id="construction-01">
+		<source data-src="videos/construction-01.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+            <div style="grid-column:2;grid-row:1;">
+              <video data-autoplay style="height:85%" id="construction-02">
+		<source data-src="videos/construction-02.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+            <div style="grid-column:3;grid-row:1;">
+              <video data-autoplay style="height:85%" id="construction-03">
+		<source data-src="videos/construction-03.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+            <div style="grid-column:2;grid-row:2;">
+              <video data-autoplay style="height:85%" id="construction-04">
+		<source data-src="videos/construction-04.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+          </div>
+        </section>
+
+        <!-- 12 latest results from the hardware -->
+        <section>
+          <div class="header">Latest results from simulation</div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <div style="grid-column:1;">
+              <video data-autoplay style="height:85%" id="staircase">
+		<source data-src="videos/staircase.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+            <div style="grid-column:2;">
+              <video data-autoplay style="height:85%" id="pyramid">
+		<source data-src="videos/pyramid.mp4" type="video/mp4"/>
+	      </video>
+            </div>
+          </div>
+        </section>
         
-        <!-- whole slide layout -->        
+        <!-- 13 moving forwards -->
+        <section>
+          <div class="header">Moving forwards</div>
+          <div class="content" style="grid-template-columns:auto 27.5% 27.5%;grid-template-rows:auto auto 10%;">
+            <ul style="grid-column:1;grid-row:1/3;align-self:center;">
+	      <li>Enable construction of arbitary structures specified in a configuration file</li>
+              <li>Investigate dynamic task allocation and parallel construction</li>
+	    </ul>
+            <img class="plain" style="grid-column:2;grid-row:1;align-self:end;justify-self:center;" src="images/structures/ring5x5x1c.png"/>
+            <img class="plain" style="grid-column:2;grid-row:2;align-self:end;justify-self:center;" src="images/structures/pyramid.png"/>
+            <img class="plain" style="grid-column:3;grid-row:1;align-self:end;justify-self:center;" src="images/structures/ring5x5x1b.png"/>
+            <img class="plain" style="grid-column:3;grid-row:2;align-self:end;justify-self:center;" src="images/structures/invpyramid.png"/>
+          </div>
+        </section>
+
+        <!-- 14 long-term goals of the research -->
+        <section>
+          <div class="header">Long-term goals of our research</div>
+          <div class="content" style="grid-template-columns:55% auto;">
+            <img style="grid-column:1;height:80%;align-self:center;justify-self:center;" src="images/wall.png"/>
+            <img style="grid-column:2;height:80%;align-self:center;justify-self:center;" src="images/adaptive.png"/>
+          </div>
+        </section>
+
+        <!-- 15 end of presentation -->
+        <section>
+          <div class="header">End of presentation</div>
+          <div class="content">
+            <p style="grid-column:1;grid-row:1;align-self:center;justify-self:center;">Any questions? Comments?<p>
+          </div>
+        </section>
+        
+        <!-- 
 	<section>
           <div class="header">Whole slide layout title</div>
           <div class="content">
@@ -224,7 +315,6 @@
             </div>
           </div>
         </section>
-        <!-- left-right slide layout -->        
         <section>
           <div class="header">Left-right slide layout title</div>
           <div class="content" style="grid-template-columns:50% auto;">
@@ -236,7 +326,6 @@
             </div>
           </div>
         </section>
-        <!-- top-bottom slide layout -->
         <section>
           <div class="header">Top-bottom slide layout title</div>
           <div class="content" style="grid-template-rows:50% auto;">
@@ -248,6 +337,7 @@
             </div>
           </div>
         </section>
+        -->
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
