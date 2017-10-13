@@ -19,12 +19,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.reveal section img.plain {
-    border: 4px solid transparent;
-    box-shadow: none;
-    background: rgba(0,0,0,0);
-}
-
+.reveal section img,
 .reveal section video {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
@@ -33,10 +28,15 @@
   object-fit: inherit;
 }
 
+.reveal section img.plain,
 .reveal section video.plain {
     border: 4px solid transparent;
     box-shadow: none;
     background: rgba(0,0,0,0);
+}
+
+.reveal .slides section .content figure figcaption {
+    font-size: 0.75em;
 }
 
 /* title slide layout */
@@ -86,31 +86,31 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-	 grid-column-gap: 10pt;
-  	 grid-row-gap: 10pt;
-/*  align-content: center; */
+    grid-column-gap: 10pt;
+    grid-row-gap: 10pt;
+/*    align-items: center;
+    justify-content: center; */
 }
 
-.reveal .slides section .content div {
+.reveal .slides section .content p,
+.reveal .slides section .content ol,
+.reveal .slides section .content ul,
+.reveal .slides section .content img,
+.reveal .slides section .content figure,
+.reveal .slides section .content video {
     grid-column:1;
     grid-row:1;
-/*  align-self: center; */
 }
 
-.reveal .slides section .content div ul li {
+.reveal .slides section .content ul li,
+.reveal .slides section .content ol li {
     padding-bottom: 10px;
 }
 
-.reveal .slides section .content div ul {
+.reveal .slides section .content ul,
+.reveal .slides section .content ol {
     padding-bottom: 20px;
 }
 
-.reveal .slides section .content div ol li {
-    padding-bottom: 10px;
-}
-
-.reveal .slides section .content div ol {
-    padding-bottom: 20px;
-}
 
 

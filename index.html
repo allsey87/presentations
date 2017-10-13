@@ -39,19 +39,15 @@
         <section>
           <div class="header">What is swarm robotics?</div>
           <div class="content" style="grid-template-columns:47.5% auto;">
-            <div style="grid-column:1;">
+            <ul style="grid-column:1;">
+              <li>A completely decentralised technique for coordinating multi-robot systems</li>
+              <li>Swarm robotic systems self-organise using direct and indirect communication</li>
               <ul>
-                <li>A completely decentralised technique for coordinating multi-robot systems</li>
-                <li>Swarm robotic systems self-organise using direct and indirect communication</li>
-                <ul>
-                  <li>Direct: between two robots in the vicinity of each other</li>
-                  <li>Indirect: through modifications of a shared environment</li>
-                </ul>
+                <li>Direct: between two robots in the vicinity of each other</li>
+                <li>Indirect: through modifications of a shared environment</li>
               </ul>
-            </div>
-            <div style="grid-column:2;">
-              <img style="width:100%" src="images/footbots.jpg"/>
-            </div>
+            </ul>
+            <img style="grid-column:2;" src="images/footbots.jpg"/>
           </div>
         </section>
         
@@ -59,41 +55,33 @@
         <section>
           <div class="header">What is the inspiration for swarm robotics?</div>
           <div class="content" style="grid-template-columns:50% auto;">
-            <div style="grid-column:1;">
+            <ul style="grid-column:1;">
+              <li>Research into the collective behaviour of social insect colonies shows that these systems are:</li>
               <ul>
-                <li>Research into the collective behaviour of social insect colonies shows that these systems are:</li>
-                <ul>
-                  <li>Robust</li>
-                  <li>Scalable</li>
-                  <li>Adaptive</li>
-                </ul>
-                <li>At IRIDIA, we study the intelligence of these natural systems and apply it to multi-robot systems</li>
+                <li>Robust</li>
+                <li>Scalable</li>
+                <li>Adaptive</li>
               </ul>
-            </div>
-            <div style="grid-column:2;">
-              <img style="width:100%" src="images/leafcutterants.png"/>
-            </div>
+              <li>At IRIDIA, we study the intelligence of these natural systems and apply it to multi-robot systems</li>
+            </ul>
+            <img style="grid-column:2;" src="images/leafcutterants.png"/>
           </div>
         </section>
         
         <!-- 03 recent work at IRIDIA -->
         <section>
           <div class="header">Recent work at IRIDIA</div>
-          <div class="content" style="grid-template-columns:50% auto;">
-            <div style="grid-column:1;">
-              <img style="height:65%" src="images/eyebots.jpg"/>
-              <ul>
-                <li>Eye-bots attach magnetically to a ceiling to form a surveillance network</li>
-              </ul>
-            </div>
-            <div style="grid-column:2;">
-              <video style="height:65%" data-autoplay>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <figure style="grid-column:1;">
+              <img src="images/eyebots.jpg"/>
+              <figcaption>Eye-bots attach magnetically to a ceiling to form a surveillance network</figcaption>
+            </figure>
+            <figure style="grid-column:2;">
+              <video data-autoplay>
 		<source data-src="videos/swarmanoid.mp4" type="video/mp4"/>
 	      </video>
-              <ul>
-                <li>Two foot-bots and a hand-bot navigate an indoor environment</li>
-              </ul>
-            </div>
+              <figcaption>Two foot-bots and a hand-bot navigate an indoor environment</figcaption>
+            </figure>
           </div>
         </section>
 
@@ -101,21 +89,19 @@
         <section>
           <div class="header">Recent work at IRIDIA</div>
           <div class="content" style="grid-template-columns:40% auto auto;">
-            <div style="grid-column:1;">
-              <ul>
-                <li>I have developed a swarm robotics construction system using hardware and simulation</li>
-                <li>The system consists of autonomous robots and stigmergic blocks</li>
-                <li>The system utilises hardware and simulation to enable a comprehensive workflow for the design and the validation of control software</li>
-              </ul>
-            </div>
-            <div style="grid-column:2;">
-              <img style="width:100%;" src="images/hardware.png"/>
-              <small>Hardware implementation</small>
-            </div>
-            <div style="grid-column:3;">
-              <img style="width:100%;" src="images/simulation.png"/>
-              <small>Implementation using simulation</small>
-            </div>           
+            <ul style="grid-column:1;">
+              <li>I have developed a swarm robotics construction system using hardware and simulation</li>
+              <li>The system consists of autonomous robots and stigmergic blocks</li>
+              <li>The system utilises hardware and simulation to enable a comprehensive workflow for the design and the validation of control software</li>
+            </ul>
+            <figure style="grid-column:2;">
+              <img src="images/hardware.png"/>
+              <figcaption>Hardware implementation</figcaption>
+            </figure>
+            <figure style="grid-column:3;">
+              <img src="images/simulation.png"/>
+              <figcaption>Implementation using simulation</figcaption>
+            </figure>       
           </div>
         </section>
         
@@ -123,17 +109,15 @@
         <section>
           <div class="header">Autonomous construction by a swarm of robots</div>
           <div class="content" style="grid-template-columns:50% auto;">
-            <div >
-              <ol>
-                <li>Robots explore an environment, observing partially-built structures</li>
-                <li>Robots detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
-                <li>These construction actions modify the partially-built structures in the environment, resulting in a feedback loop, which advances the construction</li>
-              </ol>
-            </div>
-            <div style="grid-column:2">
-              <img class="plain" style="width:75%" src="images/structures.png"/>
-              <small>Work in simulation by Theraulaz and Bonabeau demonstrated how this technique may be used to generated sophisticated structures</small>
-            </div>
+            <ol style="grid-column:1">
+              <li>Robots explore an environment, observing partially-built structures</li>
+              <li>Robots detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
+              <li>These construction actions modify the partially-built structures in the environment, resulting in a feedback loop, which advances the construction</li>
+            </ol>
+            <figure style="grid-column:2">
+              <img class="plain" src="images/structures.png"/>
+              <figcaption>Work in simulation by Theraulaz and Bonabeau demonstrated how this technique may be used to generated sophisticated structures</figcaption>
+            </figure>
           </div>
         </section>
 
@@ -141,21 +125,19 @@
         <section>
 	  <div class="header">The hardware implementation</div>
 	  <div class="content" style="grid-template-columns:42.5% auto;">
-            <div style="grid-column:1;">
+            <figure style="grid-column:1;">
               <img style="width:100%" src="images/hardwareb.png"/>
-              <small>Two robots construct a wall by attaching stigmergic blocks</small>
-	    </div>
-            <div style="grid-column:2;">
-	      <ul>
-		<li>Consists of autonomous robots and stigmergic blocks, which the robots assemble into structures</li>
-                <li>Purpose of the hardware:</li>
-                <ol>
-                  <li>To understand how the hardware influences the construction and the use of stigmergy</li>
-                  <li>To provide the implementation in simulation with a basis in reality</li>
-                  <li>To validate results from simulation</li>
-                </ol>                  
-              </ul>
-            </div>
+              <figcaption>Two robots construct a wall by attaching stigmergic blocks</figcaption>
+	    </figure>
+	    <ul style="grid-column:2;">
+	      <li>Consists of autonomous robots and stigmergic blocks, which the robots assemble into structures</li>
+              <li>Purpose of the hardware:</li>
+              <ol>
+                <li>To understand how the hardware influences the construction and the use of stigmergy</li>
+                <li>To provide the implementation in simulation with a basis in reality</li>
+                <li>To validate results from simulation</li>
+              </ol>                  
+            </ul>
 	  </div>
 	</section>
         
@@ -163,14 +145,14 @@
 	<section>
 	  <div class="header">The stigmergic block</div>
 	  <div class="content" style="grid-template-columns:57.5% auto;">
-            <div style="grid-column:1;">
+            <figure style="grid-column:1;">
 	      <img class="plain" style="height:75%" src="images/block-internal-annotated.png"/>
-              <small>Internal components of a stigmergic block</small>
-	    </div>
-            <div style="grid-column:2;">
+              <figcaption>Internal components of a stigmergic block</figcaption>
+	    </figure>
+            <figure style="grid-column:2;">
 	      <img style="height:75%" src="images/blocks.png"/>
-              <small>A smart structure made from stigmergic blocks</small>
-	    </div>
+              <figcaption>A smart structure made from stigmergic blocks</figcaption>
+	    </figure>
 	  </div>
 	</section>
 
@@ -178,16 +160,12 @@
 	<section>
 	  <div class="header">The autonomous robot</div>
 	  <div class="content" style="grid-template-columns:22.5% 22.5% auto;">
-            <div style="grid-column:2;">
-	      <img style="height:100%" src="images/robot.png"/>
-	    </div>
-            <div style="grid-column:1;">
-	      <img style="height:100%" src="images/robotb.png"/>
-	    </div>
-            <div style="grid-column:3;">
+	    <img style="grid-column:1;" src="images/robotback.png"/>
+	    <img style="grid-column:2;" src="images/robotfront.png"/>
+            <figure style="grid-column:3;">
 	      <img class="plain" style="height:85%" src="images/end-effector-annotated.png"/>
-              <small>Components of the autonomous robot's end effector</small>
-	    </div>
+              <figcaption>Components of the autonomous robot's end effector</figcaption>
+            </figure>
 	  </div>
 	</section>
 
@@ -217,16 +195,14 @@
 	<section>
           <div class="header">Latest results from the hardware</div>
           <div class="content">
-            <div>
-              <video data-autoplay id="construction-00">
-	        <source data-src="videos/construction-00.mp4" type="video/mp4"/>
-	      </video>
-              <script>
-                document.getElementById('construction-00').addEventListener('ended', function(){
-                   Reveal.next();
-                }, false);
-              </script>
-            </div>
+            <video style="justify-self:center" data-autoplay id="construction-00">
+	      <source data-src="videos/construction-00.mp4" type="video/mp4"/>
+	    </video>
+            <script>
+              document.getElementById('construction-00').addEventListener('ended', function(){
+              Reveal.next();
+              }, false);
+            </script>
           </div>
         </section>
         
@@ -234,26 +210,18 @@
         <section>
           <div class="header">Latest results from the hardware</div>
           <div class="content" style="grid-template-columns:auto auto auto;grid-template-rows:auto auto">
-            <div style="grid-column:1;grid-row:1;">
-              <video data-autoplay style="height:85%" id="construction-01">
-		<source data-src="videos/construction-01.mp4" type="video/mp4"/>
-	      </video>
-            </div>
-            <div style="grid-column:2;grid-row:1;">
-              <video data-autoplay style="height:85%" id="construction-02">
-		<source data-src="videos/construction-02.mp4" type="video/mp4"/>
-	      </video>
-            </div>
-            <div style="grid-column:3;grid-row:1;">
-              <video data-autoplay style="height:85%" id="construction-03">
-		<source data-src="videos/construction-03.mp4" type="video/mp4"/>
-	      </video>
-            </div>
-            <div style="grid-column:2;grid-row:2;">
-              <video data-autoplay style="height:85%" id="construction-04">
-		<source data-src="videos/construction-04.mp4" type="video/mp4"/>
-	      </video>
-            </div>
+            <video data-autoplay style="grid-column:1;grid-row:1;" id="construction-01">
+	      <source data-src="videos/construction-01.mp4" type="video/mp4"/>
+	    </video>
+            <video data-autoplay style="grid-column:2;grid-row:1;" id="construction-02">
+	      <source data-src="videos/construction-02.mp4" type="video/mp4"/>
+	    </video>
+            <video data-autoplay style="grid-column:3;grid-row:1;" id="construction-03">
+	      <source data-src="videos/construction-03.mp4" type="video/mp4"/>
+	    </video>
+            <video data-autoplay style="grid-column:2;grid-row:2;" id="construction-04">
+	      <source data-src="videos/construction-04.mp4" type="video/mp4"/>
+	    </video>
           </div>
         </section>
 
