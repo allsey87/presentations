@@ -19,25 +19,21 @@
   <body>
     <div class="reveal">
       <div class="slides">
-	<section>
-          <!-- 00 title slide -->
-          <div id="title">
-            <div id="heading">            
-              <h1>Swarm Robotics for Autonomous Multi-Robot Construction</h1>
-            </div>
-            <div id="author">
-              <h3>Michael Allwright</h3>
-              <p>Post-doctoral researcher in swarm robotics</p>
-            </div>
-            <div id="affiliation">
-              <img class="plain" height="86%" src="affiliation.png"/>
-            </div>            
+        <!-- 00 title slide -->
+        <section class="title">
+          <h1>Swarm Robotics for Autonomous Multi-Robot Construction</h1>
+          <div id="author">
+            <b style="font-size: 1em;display:block;margin:27.5px 0px">Michael Allwright</b>
+            <b style="font-size: 1em;display:block;margin:27.5px 0px">Marco Dorigo</b>
           </div>
+          <img id="affiliation" class="plain" style="margin-bottom:30px;height:300px" src="affiliation.png"/>
         </section>
         
         <!-- 01 what is swarm robotics? -->
         <section>
-          <div class="header">What is swarm robotics?</div>
+          <div class="header">
+            <h2>What is swarm robotics?</h2>
+          </div>
           <div class="content" style="grid-template-columns:47.5% auto;">
             <ul style="grid-column:1;">
               <li>A completely decentralised technique for coordinating multi-robot systems</li>
@@ -47,13 +43,17 @@
                 <li>Indirect: through modifications of a shared environment</li>
               </ul>
             </ul>
-            <img style="grid-column:2;" src="images/footbots.jpg"/>
+            <figure style="grid-column:2;">
+              <img src="images/footbots.jpg"/>
+            </figure>
           </div>
         </section>
         
         <!-- 02 what is the inspiration for swarm robotics? -->
         <section>
-          <div class="header">What is the inspiration for swarm robotics?</div>
+          <div class="header">
+            <h2>What is the inspiration for swarm robotics?</h2>
+          </div>
           <div class="content" style="grid-template-columns:50% auto;">
             <ul style="grid-column:1;">
               <li>Research into the collective behaviour of social insect colonies shows that these systems are:</li>
@@ -70,14 +70,16 @@
         
         <!-- 03 recent work at IRIDIA -->
         <section>
-          <div class="header">Recent work at IRIDIA</div>
+          <div class="header">
+            <h2>Recent work at IRIDIA</h2>
+          </div>
           <div class="content" style="grid-template-columns:auto auto;">
-            <figure style="grid-column:1;">
-              <img src="images/eyebots.jpg"/>
+            <figure class="captioned" style="grid-column:1">
+              <img style="height:400px" src="images/eyebots.jpg"/>
               <figcaption>Eye-bots attach magnetically to a ceiling to form a surveillance network</figcaption>
             </figure>
-            <figure style="grid-column:2;">
-              <video data-autoplay>
+            <figure class="captioned" style="grid-column:2">
+              <video style="height:400px" data-autoplay>
 		<source data-src="videos/swarmanoid.mp4" type="video/mp4"/>
 	      </video>
               <figcaption>Two foot-bots and a hand-bot navigate an indoor environment</figcaption>
@@ -87,18 +89,20 @@
 
         <!-- 04 overview of my work -->        
         <section>
-          <div class="header">Recent work at IRIDIA</div>
-          <div class="content" style="grid-template-columns:40% auto auto;">
+          <div class="header">
+            <h2>Recent work at IRIDIA</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto auto;">
             <ul style="grid-column:1;">
               <li>I have developed a swarm robotics construction system using hardware and simulation</li>
               <li>The system consists of autonomous robots and stigmergic blocks</li>
               <li>The system utilises hardware and simulation to enable a comprehensive workflow for the design and the validation of control software</li>
             </ul>
-            <figure style="grid-column:2;">
+            <figure class="captioned" style="grid-column:2">
               <img src="images/hardware.png"/>
               <figcaption>Hardware implementation</figcaption>
             </figure>
-            <figure style="grid-column:3;">
+            <figure class="captioned" style="grid-column:3">
               <img src="images/simulation.png"/>
               <figcaption>Implementation using simulation</figcaption>
             </figure>       
@@ -107,14 +111,16 @@
         
         <!-- 05 the 'swarm' approach to multi-agent construction -->
         <section>
-          <div class="header">Autonomous construction by a swarm of robots</div>
+          <div class="header">
+            <h2>Autonomous construction by a swarm of robots</h2>
+          </div>
           <div class="content" style="grid-template-columns:50% auto;">
             <ol style="grid-column:1">
               <li>Robots explore an environment, observing partially-built structures</li>
               <li>Robots detect predefined patterns of the blocks in a partially-built structure, which trigger construction actions</li>
               <li>These construction actions modify the partially-built structures in the environment, resulting in a feedback loop, which advances the construction</li>
             </ol>
-            <figure style="grid-column:2">
+            <figure class="captioned" style="grid-column:2">
               <img class="plain" src="images/structures.png"/>
               <figcaption>Work in simulation by Theraulaz and Bonabeau demonstrated how this technique may be used to generated sophisticated structures</figcaption>
             </figure>
@@ -123,9 +129,11 @@
 
         <!-- 06 the hardware implementation -->
         <section>
-	  <div class="header">The hardware implementation</div>
+	  <div class="header">
+            <h2>The hardware implementation</h2>
+          </div>
 	  <div class="content" style="grid-template-columns:42.5% auto;">
-            <figure style="grid-column:1;">
+            <figure class="captioned" style="grid-column:1">
               <img style="width:100%" src="images/hardwareb.png"/>
               <figcaption>Two robots construct a wall by attaching stigmergic blocks</figcaption>
 	    </figure>
@@ -143,14 +151,16 @@
         
         <!-- 07 the stigmergic block -->
 	<section>
-	  <div class="header">The stigmergic block</div>
+	  <div class="header">
+            <h2>The stigmergic block</h2>
+          </div>
 	  <div class="content" style="grid-template-columns:57.5% auto;">
-            <figure style="grid-column:1;">
-	      <img class="plain" style="height:75%" src="images/block-internal-annotated.png"/>
+            <figure class="captioned" style="grid-column:1">
+	      <img class="plain" style="height:450px" src="images/block-internal-annotated.png"/>
               <figcaption>Internal components of a stigmergic block</figcaption>
 	    </figure>
-            <figure style="grid-column:2;">
-	      <img style="height:75%" src="images/blocks.png"/>
+            <figure class="captioned" style="grid-column:2">
+	      <img style="height:450px" src="images/blocks.png"/>
               <figcaption>A smart structure made from stigmergic blocks</figcaption>
 	    </figure>
 	  </div>
@@ -158,12 +168,18 @@
 
         <!-- 08 the autonomous robot -->
 	<section>
-	  <div class="header">The autonomous robot</div>
+	  <div class="header">
+            <h2>The autonomous robot</h2>
+          </div>
 	  <div class="content" style="grid-template-columns:22.5% 22.5% auto;">
-	    <img style="grid-column:1;" src="images/robotback.png"/>
-	    <img style="grid-column:2;" src="images/robotfront.png"/>
-            <figure style="grid-column:3;">
-	      <img class="plain" style="height:85%" src="images/end-effector-annotated.png"/>
+            <figure style="grid-column:1">
+              <img style="height:600px" src="images/robotback.png"/>
+            </figure>
+            <figure style="grid-column:2">
+              <img style="height:600px" src="images/robotfront.png"/>
+            </figure>
+            <figure  class="captioned" style="grid-column:3">
+	      <img class="plain" style="width:100%" src="images/end-effector-annotated.png"/>
               <figcaption>Components of the autonomous robot's end effector</figcaption>
             </figure>
 	  </div>
@@ -171,7 +187,9 @@
 
         <!-- 09 the implementation in simulation -->
         <section>
-	  <div class="header">The implementation in simulation</div>
+	  <div class="header">
+            <h2>The implementation in simulation</h2>
+          </div>
 	  <div class="content" style="grid-template-columns:50% auto;">
             <div style="grid-column:1;">
 	      <ul>
@@ -182,93 +200,167 @@
                   <li>To enable scaling up to and collecting data from large experiments</li>
 	        </ol>                  
 	      </ul>
-              <img class="plain" style="height:15%;margin:0pt 15pt" src="images/bullet.png"/>
-              <img class="plain" style="height:15%;margin:0pt 15pt" src="images/opengl.png"/>
+              <img class="plain" style="height:80px;margin:0pt 20pt" src="images/bullet.png"/>
+              <img class="plain" style="height:80px;margin:0pt 20pt" src="images/opengl.png"/>
 	    </div>
-            <div style="grid-column:2;">
-              <img style="height:100%" src="images/simulationb.png"/>
-	    </div>
+            <figure style="grid-column:2;">
+              <img style="width:100%" src="images/simulationb.png"/>
+	    </figure>
 	  </div>
 	</section>
 
         <!-- 10 latest results from the hardware -->
 	<section>
-          <div class="header">Latest results from the hardware</div>
+          <div class="header">
+            <h2>Results from the hardware</h2>
+          </div>
           <div class="content">
-            <video style="justify-self:center" data-autoplay id="construction-00">
-	      <source data-src="videos/construction-00.mp4" type="video/mp4"/>
-	    </video>
-            <script>
-              document.getElementById('construction-00').addEventListener('ended', function(){
-              Reveal.next();
-              }, false);
-            </script>
+            <figure>
+              <video id="construction-00" style="height:700px" data-autoplay>
+	        <source data-src="videos/construction-00.mp4" type="video/mp4"/>
+	      </video>
+              <script>
+                document.getElementById('construction-00').addEventListener('ended', function(){
+                Reveal.next();
+                }, false);
+              </script>
+            </figure>
           </div>
         </section>
         
         <!-- 11 latest results from the hardware -->
         <section>
-          <div class="header">Latest results from the hardware</div>
-          <div class="content" style="grid-template-columns:auto auto auto;grid-template-rows:auto auto">
-            <video data-autoplay style="grid-column:1;grid-row:1;" id="construction-01">
-	      <source data-src="videos/construction-01.mp4" type="video/mp4"/>
-	    </video>
-            <video data-autoplay style="grid-column:2;grid-row:1;" id="construction-02">
-	      <source data-src="videos/construction-02.mp4" type="video/mp4"/>
-	    </video>
-            <video data-autoplay style="grid-column:3;grid-row:1;" id="construction-03">
-	      <source data-src="videos/construction-03.mp4" type="video/mp4"/>
-	    </video>
-            <video data-autoplay style="grid-column:2;grid-row:2;" id="construction-04">
-	      <source data-src="videos/construction-04.mp4" type="video/mp4"/>
-	    </video>
+          <div class="header">
+            <h2>Results from the hardware</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;grid-template-rows:auto auto">
+            <figure style="grid-column:1;grid-row:1;justify-self:right">
+              <video data-autoplay style="height:350px" id="construction-01">
+	        <source data-src="videos/construction-01.mp4" type="video/mp4"/>
+	      </video>
+            </figure>
+            <figure style="grid-column:2;grid-row:1;justify-self:left">
+              <video data-autoplay style="height:350px" id="construction-02">
+	        <source data-src="videos/construction-02.mp4" type="video/mp4"/>
+	      </video>
+            </figure>
+            <figure style="grid-column:1;grid-row:2;justify-self:right">
+              <video data-autoplay style="height:350px" id="construction-03">
+	        <source data-src="videos/construction-03.mp4" type="video/mp4"/>
+	      </video>
+            </figure>
+            <figure style="grid-column:2;grid-row:2;justify-self:left">
+              <video data-autoplay style="height:350px" id="construction-04">
+	        <source data-src="videos/construction-04.mp4" type="video/mp4"/>
+	      </video>
+            </figure>
           </div>
         </section>
 
         <!-- 12 latest results from the hardware -->
         <section>
-          <div class="header">Latest results from simulation</div>
+          <div class="header">
+            <h2>Results from simulation</h2>
+          </div>
           <div class="content" style="grid-template-columns:auto auto;">
-            <div style="grid-column:1;">
-              <video data-autoplay style="height:85%" id="staircase">
+            <figure style="grid-column:1;">
+              <video data-autoplay style="height:600px" id="staircase">
 		<source data-src="videos/staircase.mp4" type="video/mp4"/>
 	      </video>
-            </div>
-            <div style="grid-column:2;">
-              <video data-autoplay style="height:85%" id="pyramid">
+            </figure>
+            <figure style="grid-column:2;">
+              <video data-autoplay style="height:600px" id="pyramid">
 		<source data-src="videos/pyramid.mp4" type="video/mp4"/>
 	      </video>
-            </div>
+            </figure>
           </div>
         </section>
         
         <!-- 13 moving forwards -->
         <section>
-          <div class="header">Moving forwards</div>
-          <div class="content" style="grid-template-columns:auto 27.5% 27.5%;grid-template-rows:auto auto 10%;">
-            <ul style="grid-column:1;grid-row:1/3;align-self:center;">
-	      <li>Enable construction of arbitary structures specified in a configuration file</li>
-              <li>Investigate dynamic task allocation and parallel construction</li>
+          <div class="header">
+            <h2>Next steps in our research</h2>
+          </div>
+          <div class="content" style="grid-template-columns:50% auto">
+            <ul>
+              <li>Improve the reliability of our hardware so we can scale to larger and more sophisticated construction scenarios</li>
 	    </ul>
-            <img class="plain" style="grid-column:2;grid-row:1;align-self:end;justify-self:center;" src="images/structures/ring5x5x1c.png"/>
-            <img class="plain" style="grid-column:2;grid-row:2;align-self:end;justify-self:center;" src="images/structures/pyramid.png"/>
-            <img class="plain" style="grid-column:3;grid-row:1;align-self:end;justify-self:center;" src="images/structures/ring5x5x1b.png"/>
-            <img class="plain" style="grid-column:3;grid-row:2;align-self:end;justify-self:center;" src="images/structures/invpyramid.png"/>
+            <figure style="grid-column:2">
+              <img class="plain" src="images/manipulator-base.png"/>
+            </figure>
+          </div>
+        </section>
+
+        
+        <section>
+          <div class="header">
+            <h2>Next steps in our research</h2>
+          </div>
+          <div class="content" style="grid-template-columns:40% auto auto;grid-template-rows:auto auto">
+            <ul style="grid-row: 1/span 2">
+              <li>Enable construction of arbitrary structures specified in a configuration file</li>
+              <li>Study how construction can be performed in parallel and the use of dynamic task allocation</li>
+              <li>Investigate the use of automatic design methods and compilers</li>
+	    </ul>
+            <figure style="grid-column:2;grid-row:1">
+              <img class="plain" src="images/structures/ring5x5x1c.png"/>
+            </figure>
+            <figure style="grid-column:3;grid-row:1">
+              <img class="plain" src="images/structures/pyramid.png"/>
+            </figure>
+            <figure style="grid-column:2;grid-row:2">
+              <img class="plain" src="images/structures/ring5x5x1b.png"/>
+            </figure>
+            <figure style="grid-column:3;grid-row:2">
+              <img class="plain" src="images/structures/invpyramid.png"/>
+            </figure>
           </div>
         </section>
 
         <!-- 14 long-term goals of the research -->
         <section>
-          <div class="header">Long-term goals of our research</div>
-          <div class="content" style="grid-template-columns:55% auto;">
-            <img style="grid-column:1;height:80%;align-self:center;justify-self:center;" src="images/wall.png"/>
-            <img style="grid-column:2;height:80%;align-self:center;justify-self:center;" src="images/adaptive.png"/>
+          <div class="header">
+            <h2>Long-term goals of our research</h2>
+          </div>
+          <div class="content" style="grid-template-columns:40% auto;">
+            <div style="grid-column:1">
+              <b>Adaptive construction</b>
+              <ul>
+                <li>Robots perform construction with respect to their environment</li>
+                <li>For example: containing an area, which has been contaminated with a hazardous material</li>
+              </ul>
+            </div>
+            </figure>
+            <figure style="grid-column:2">
+              <img style="height:600px" src="images/adaptive.png"/>
+            </figure>
           </div>
         </section>
 
-        <!-- 15 end of presentation -->
+        <!-- 15 long-term goals of the research -->
         <section>
-          <div class="header">End of presentation</div>
+          <div class="header">
+            <h2>Long-term goals of our research</h2>
+          </div>
+          <div class="content" style="grid-template-columns:30% auto;">
+            <div style="grid-column:1">
+              <b>Recursive Construction</b>
+              <ul>
+                <li>Robots use recursive patterns to build large and sophisticated symmetric structures</li>
+              </ul>
+            </div>
+            <figure style="grid-column:2">
+              <img style="height:600px" src="images/wall.png"/>
+            </figure>
+          </div>
+        </section>
+
+
+        <!-- 16 end of presentation -->
+        <section>
+          <div class="header">
+            <h2>End of presentation</h2>
+          </div>
           <div class="content">
             <p style="grid-column:1;grid-row:1;align-self:center;justify-self:center;">Any questions? Comments?<p>
           </div>
@@ -321,6 +413,7 @@
         transition: 'slide',
         controls: false,
         history: true,
+        display: 'grid'
       });
     </script>
   </body>
