@@ -24,29 +24,18 @@
           <h1>This is a long academic presentation title made from one too many characters</h1>
           <div id="author">
             <b style="font-size: 1.25em;">Michael Allwright</b>
-            <p>Post-doctoral researcher for swarm robotics</p>
+            <p style="font-size: 1em;display:block;margin:27.5px 0px">Post-doctoral researcher for swarm robotics</p>
           </div>
-          <img id="affiliation" class="plain" style="margin-bottom:22.5px" src="affiliation.png"/>
+          <img id="affiliation" class="plain" style="margin-bottom:30px;height:300px" src="affiliation.png"/>
         </section>
         
         <!-- whole slide layout -->        
-        <section class="default">
+        <section>
           <div class="header">
             <h2>Whole slide layout title</h2>
           </div>
           <div class="content">
             <p>Whole slide contents!</p>
-          </div>
-        </section>
-        
-        <!-- left-right slide layout -->        
-        <section class="default">
-          <div class="header">
-            <h2>Left-right slide layout title</h2>
-          </div>
-          <div class="content" style="grid-template-columns:auto auto;">
-            <p style="grid-column:1;">Left side contents!</p>
-            <p style="grid-column:2;">Right side contents!</p>
           </div>
         </section>
 
@@ -56,13 +45,14 @@
             <h2>Left-right slide layout title</h2>
           </div>
           <div class="content" style="grid-template-columns:auto auto;">
-            <figure style="grid-column:1;">
-              <img src="http://via.placeholder.com/350x150"/>
-              <figcaption>350x150</figcaption>
-            </figure>
-            <figure style="grid-column:2;">
-              <img src="http://via.placeholder.com/350x150"/>
-              <figcaption>350x150</figcaption>
+            <ul style="grid-column:1;">
+              <li>These are</li>
+              <li>Some very important</li>
+              <li>Points about this image</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+              <img src="images/350x150.png"/>
+              <figcaption>This is a figure with a caption</figcaption>
             </figure>
           </div>
         </section>
@@ -72,9 +62,11 @@
           <div class="header">
             <h2>Top-bottom slide layout title</h2>
           </div>
-          <div class="content" style="grid-template-rows:50% auto;">
-            <p style="grid-row:1;">Top contents!</p>
-            <p style="grid-row:2;">Bottom contents!</p>
+          <div class="content" style="grid-template-rows:auto auto;">
+            <p style="grid-row:1;">Some text above a figure without a caption</p>
+            <figure class="captioned" style="grid-row:2">
+              <img src="images/350x150.png"/>
+            </figure>
           </div>
         </section>
       </div>
