@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Presentation Title</title>
+    <title>Simulating Multi-Robot Construction in ARGoS</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css">
     <link rel="stylesheet" href="css/layouts.css">
@@ -19,28 +19,387 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- title slide -->
+        <!-- 00 Title -->
 	<section class="title">
-          <h1>This is a long academic presentation title made from one too many characters</h1>
-          <div id="author">
-            <b style="font-size: 1.25em;">Michael Allwright</b>
-            <p style="font-size: 1em;display:block;margin:27.5px 0px">Post-doctoral researcher for swarm robotics</p>
-          </div>
+          <h1>Simulating Multi-Robot Construction in ARGoS</h1>
+          <div style="" id="author">
+            <p style="font-size:1.25em;font-weight:bold;">Michael Allwright &bull; Navneet Bhalla</p>
+            <p style="font-size: 1.25em;font-weight:bold;">Carlo Pinciroli &bull; Marco Dorigo</p>
+           </div>
           <img id="affiliation" class="plain" style="margin-bottom:30px;height:300px" src="affiliation.png"/>
         </section>
-        
-        <!-- whole slide layout -->        
+
+        <!-- 01 Presentation Outline -->
         <section>
+          <div class="header">
+            <h2>Presentation Outline</h2>
+          </div>
+          <div class="content">
+            <ol>
+              <li>Swarm construction</li>
+              <li>Previous results</li>
+              <li>The ARGoS simulator</li>
+              <li>Extensions</li>
+              <li>Multi-robot Construction</li>
+              <li>Conclusions</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- 02 Swarm Construction -->
+        <section class="default">
+          <div class="header">
+            <h2>Swarm Construction</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <ul style="grid-column:1;">
+              <li>Nest construction by social insects: ant nests, bee hives, termite mounds, and wasp nests</li>
+              <li>Robust, scalable, and adaptive</li>
+              <li>Can swarm intelligence be applied to multi-robot construction?</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+              <img src="images/WaspColony.jpg"/>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 02b Swarm Construction -->
+        <section class="default">
+          <div class="header">
+            <h2>Multi-Robot vs. Swarm Robotics</h2>
+          </div>
+          <div class="content">
+            <figure style="grid-column:1">
+              <img class="plain" src="images/comparison.svg" width="90%"/>
+            </figure>
+          </div>
+        </section>
+
+
+        <!-- 03 The SRoCS Platform -->
+        <section class="default">
+          <div class="header">
+            <h2>The SRoCS Platform</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto 60%;">
+            <ul style="grid-column:1;">
+              <li>SRoCS: <b>Swarm Robotics Construction System</b></li>
+              <li>Mobile robots that assemble <em>stigmergic blocks</em> into structures</li>
+              <li>Stigmergic blocks are markable by the robots</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+              <img src="images/SRoCS.png"/>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 04 Previous Results -->
+        <section>
+          <div class="header">
+            <h2>Results from the SRoCS Platform</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto 60%;">
+            <ul style="grid-column:1;">
+              <li>Main result: construction of a staircase</li>
+              <li>Robot picks up unused blocks and attaches them to the structure</li>
+              <li>Attachment site depends on previous work</li>
+            </ul>
+            <figure style="grid-column:2;">
+  	          <video data-autoplay id="construction-00">
+  	            <source data-src="videos/construction-00.mp4" type="video/mp4"/>
+  	          </video>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 05 Previous Results -->
+        <section class="default">
+          <div class="header">
+            <h2>Results from the SRoCS Platform</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;grid-template-rows:auto auto;">
+            <figure style="grid-row:1;grid-column:1">
+	            <video data-autoplay id="construction-01" width="65%">
+	              <source data-src="videos/construction-01.mp4" type="video/mp4"/>
+	            </video>
+            </figure>
+            <figure style="grid-row:1;grid-column:2">
+	            <video data-autoplay id="construction-02" width="65%">
+	              <source data-src="videos/construction-02.mp4" type="video/mp4"/>
+	            </video>
+            </figure>
+            <figure style="grid-row:2;grid-column:1">
+	            <video data-autoplay id="construction-03" width="65%">
+	              <source data-src="videos/construction-03.mp4" type="video/mp4"/>
+	            </video>
+            </figure>
+            <figure style="grid-row:2;grid-column:2">
+	            <video data-autoplay id="construction-04" width="65%">
+	              <source data-src="videos/construction-04.mp4" type="video/mp4"/>
+	            </video>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 06 Challenges -->
+        <section>
+          <div class="header">
+            <h2>Challenges to Moving Forward</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto 60%;">
+            <ul style="grid-column:1;">
+              <li>The differential drive system was unreliable</li>
+              <li>Custom built hardware is expensive</li>
+              <li>Running experiments is time-consuming</li>
+            </ul>
+            <figure style="grid-column:2">
+              <img src="images/structure.png"/>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 07 Solutions -->
+        <section>
+          <div class="header">
+            <h2>Potential Solutions</h2>
+          </div>
+          <div class="content">
+            <ol>
+              <li style="font-weight:bold;">Improve the hardware</li>
+              <ul>
+                <li>Hardware-based experiments are more convincing</li>
+                <li>Recent technology may reduce manufacturing costs</li>
+                <li>Development remains time-consuming and expensive</li>
+              </ul>
+              <li style="font-weight:bold;">Perform experiments in simulation</li>
+              <ul>
+                <li>Faster development</li>
+                <li>Potential simulation-to-reality gap</li>
+              </ul>
+            </ol>
+          </div>
+        </section>
+
+        <!-- 08 The ARGoS simulator -->
+        <section class="default">
+          <div class="header">
+            <h2>The ARGoS Simulator</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <ul style="grid-column:1">
+              <li>Highly modular and extendable</li>
+              <li>Robot controllers written in C++ or Lua</li>
+              <li>Supports multiple physics engines and visualizations</li>
+              <li>In contrast to USARSim, Gazebo, and Webots, ARGoS can simulate 10,000 robots in faster than real time</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+              <img src="images/povray.png"/>
+              <figcaption>Foot-bots in ARGoS (rendered using POV-Ray)</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 09 Extensions to the ARGoS Simulator -->
+        <section class="default">
+          <div class="header">
+            <h2>Extensions to the ARGoS Simulator</h2>
+          </div>
+          <div class="content">
+            <ul style="grid-column:1;">
+              <li>The Dynamics 3D Plugin</li>
+              <li>The Prototyping Plugin</li>
+              <li>The Radio Plugin</li>
+              <li>The Camera Plugin</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 10 Dynamics 3D Plugin -->
+        <section class="default">
+          <div class="header">
+            <h2>The 3D Dynamics Plugin</h2>
+          </div>
+          <div class="content" style="grid-template-columns:50% auto;">
+            <figure class="captioned" style="grid-column:1">
+ 	            <video data-autoplay id="argos-dynamics3d" width="100%"
+                     onended="document.getElementById('argos-dynamics3d-magnetism').play()">
+	              <source data-src="videos/argos-dynamics3d.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>Supports primitives such as boxes and cylinders</figcaption>
+            </figure>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video id="argos-dynamics3d-magnetism" width="100%">
+	              <source data-src="videos/argos-dynamics3d-magnetism.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>Support for magnetism (via a plugin layer)</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 11 Prototyping Plugin -->
+        <section class="default">
+          <div class="header">
+            <h2>The Prototyping Plugin</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <ul style="grid-column:1;">
+              <li>Robots instantiated using just XML</li>
+              <li>Robots can include cameras, proximity sensors, radios, LEDs, and tags</li>
+              <li>Provides models for the Dynamics 3D plugin and Qt-OpenGL visualization</li>
+              <li>Joints can be measured and controlled via C++ and Lua</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video data-autoplay id="argos-prototype" width="100%">
+	              <source data-src="videos/argos-prototype.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>A four-wheeled vehicle controlled from Lua</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 12 The Radio Plugin -->
+        <section class="default">
+          <div class="header">
+            <h2>The Radio Plugin</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <ul style="grid-column:1;">
+              <li>Simple point-to-point radio</li>
+              <li>Send multiple messages of arbitrary length</li>
+              <li>Transmission can be seen from the visualization</li>
+              <li>Supported in both C++ and Lua robot controllers</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video data-autoplay id="argos-radios" width="100%">
+	              <source data-src="videos/argos-radios.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>Four repeaters pass a message in a loop</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 13 The Camera Plugin -->
+        <section class="default">
+          <div class="header">
+            <h2>The Camera Plugin</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto auto;">
+            <ul style="grid-column:1;">
+              <li>Supports any existing robot in ARGoS</li>
+              <li>Multiple cameras</li>
+              <li>Detection algorithms for tags and LEDs</li>
+              <li>Adding algorithms is easy (often only a few lines of code)</li>
+              <li>The frustum of the camera can be seen from visualization</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video data-autoplay id="argos-cameras" width="100%">
+	              <source data-src="videos/argos-cameras.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>A foot-bot with two cameras</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 14 Simulating SRoCS -->
+        <section>
+          <div class="header">
+            <h2>Simulation of the SRoCS Platform</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li style="font-weight:bold;">Stigmergic block</li>
+              <ul>
+                <li>Uses prototyping plugin</li>
+                <li>Radio plugin for NFC communication</li>
+                <li>Contains tags and LEDs</li>
+              </ul>
+              <li style="font-weight:bold;">Mobile Robot</li>
+              <ul>
+                <li>Uses the prototyping plugin</li>
+                <li>Detects the tags and LEDs on a block via camera plugin</li>
+                <li>Communication with a block using the radio plugin</li>
+              </ul>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 15 The Staircase Construction Task -->
+        <section>
+          <div class="header">
+            <h2>The Staircase Construction Task</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto 55%;">
+            <ul style="grid-column:1;">
+              <li>Same state machine as the hardware</li>
+              <li>Qualitative replication of the hardware-based experiment</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video data-autoplay id="argos-staircase" width="100%">
+	              <source data-src="videos/argos-staircase.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>Construction of a Staircase</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 16 The Pyramid Construction Task -->
+        <section>
+          <div class="header">
+            <h2>The Pyramid Construction Task</h2>
+          </div>
+          <div class="content" style="grid-template-columns:auto 55%;">
+            <ul style="grid-column:1;">
+              <li>Extension of the state machine from staircase task</li>
+              <li>Enables experiments that were not possible with the hardware</li>
+            </ul>
+            <figure class="captioned" style="grid-column:2">
+ 	            <video data-autoplay id="argos-pyramid" width="100%">
+	              <source data-src="videos/argos-pyramid.mp4" type="video/mp4"/>
+	            </video>
+              <figcaption>Construction of a stepped pyramid by four robots</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 17 Conclusions -->
+        <section>
+          <div class="header">
+            <h2>Conclusion</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li style="font-weight:bold;">Summary</li>
+              <ul>
+                <li>The developed extensions facilitate a qualitative simulation of the SRoCS platform</li>
+                <li>Extensions are generic and may be used to simulate other systems</li>
+              </ul>
+              <li style="font-weight:bold;">Future Work</li>
+              <ul>
+                <li>Improve the hardware so that there is a reliable system that can be modelled in simulation</li>
+                <li>Investigate the simulation-to-reality gap</li>
+              </ul>
+            </ul>
+          </div>
+        </section>
+
+
+        <!------------------------------------>
+        <!------------------------------------>
+        <!------------------------------------>
+
+
+        <!-- whole slide layout -->
+        <!--section>
           <div class="header">
             <h2>Whole slide layout title</h2>
           </div>
           <div class="content">
             <p>Whole slide contents!</p>
           </div>
-        </section>
+        </section-->
 
-        <!-- left-right slide layout -->        
-        <section class="default">
+        <!-- left-right slide layout -->
+        <!--section class="default">
           <div class="header">
             <h2>Left-right slide layout title</h2>
           </div>
@@ -55,10 +414,10 @@
               <figcaption>This is a figure with a caption</figcaption>
             </figure>
           </div>
-        </section>
+        </section-->
 
         <!-- top-bottom slide layout -->
-        <section>
+        <!--section>
           <div class="header">
             <h2>Top-bottom slide layout title</h2>
           </div>
@@ -68,7 +427,7 @@
               <img src="images/350x150.png"/>
             </figure>
           </div>
-        </section>
+        </section-->
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
@@ -84,7 +443,11 @@
         transition: 'slide',
         controls: false,
         history: true,
-        display: 'grid'
+        display: 'grid',
+        keyboard: {
+          40: 'next',
+          38: 'prev',
+        }
       });
     </script>
   </body>
